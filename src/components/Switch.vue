@@ -1,0 +1,14 @@
+<template>
+  <div>switch的文档</div>
+</template>
+
+<script>
+export default {
+  setup() {
+    return {}
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+</style>

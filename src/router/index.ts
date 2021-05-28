@@ -22,19 +22,19 @@ const router = createRouter({
             },
             {
                 path: 'switch',
-                component: () => import('../components/Switch.vue')
+                component: () => import('../components/SwitchDemo.vue')
             },
             {
                 path: 'button',
-                component: () => import('../components/Button.vue')
+                component: () => import('../components/ButtonDemo.vue')
             },
             {
                 path: 'dialog',
-                component: () => import('../components/Dialog.vue')
+                component: () => import('../components/DialogDemo.vue')
             },
             {
                 path: 'tabs',
-                component: () => import('../components/Tabs.vue')
+                component: () => import('../components/TabsDemo.vue')
             }]
 
         }

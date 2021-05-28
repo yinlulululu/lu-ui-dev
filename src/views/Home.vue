@@ -5,7 +5,7 @@
       <h1>露露UI</h1>
       <h2>一个潮流炫酷UI框架</h2>
       <p class="actions">
-        <a href="https://github.com">GitHub</a>
+        <a href="https://gitee.com/yinlululu/lulu-ui/tree/master">gitee</a>
         <router-link to="/doc">快速开始</router-link>
       </p>
     </div>

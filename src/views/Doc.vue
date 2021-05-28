@@ -36,7 +36,6 @@ export default {
   },
   setup() {
     const asideVisible = inject<Ref<boolean>>('asideVisible')
-    console.log('Doc中的asideVisible.value', asideVisible.value)
     return { asideVisible }
   }
 }

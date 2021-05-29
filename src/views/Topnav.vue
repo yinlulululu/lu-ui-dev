@@ -1,9 +1,20 @@
 <template>
   <div class="topnav">
-    <div class="logo">LOGO</div>
+    <router-link to="/" class="logo">
+      <div>
+        <img src="../assets/logo.png" alt="" />
+      </div>
+    </router-link>
+
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
+      <li>
+        <router-link to="/doc">文档</router-link>
+      </li>
+      <li>
+        <a href="https://blog.csdn.net/weixin_46734347?spm=1000.2115.3001.5343"
+          >博客</a
+        >
+      </li>
     </ul>
     <span class="toggleAside" @click="toggleAside"></span>
   </div>
@@ -28,7 +39,8 @@ export default {
 
 <style lang="scss" scoped >
 .topnav {
-  background: pink;
+  background: #212121;
+  color: #a8a9ab;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -41,6 +53,17 @@ export default {
   > .logo {
     max-width: 6em;
     margin-right: auto;
+    cursor: pointer;
+    > div {
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      overflow: hidden;
+      img {
+        width: 38px;
+        height: 38px;
+      }
+    }
   }
   > .menu {
     display: flex;
@@ -54,6 +77,7 @@ export default {
     width: 24px;
     height: 24px;
     background: red;
+
     position: absolute;
     left: 16px;
     top: 50%;

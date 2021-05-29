@@ -1,5 +1,5 @@
 <template>
-  <div>Button文档</div>
+  <div>Dialog文档</div>
 </template>
 
 <script>
@@ -12,3 +12,4 @@ export default {
 
 <style lang="scss" scoped>
 </style>
+

@@ -16,7 +16,11 @@
         >
       </li>
     </ul>
-    <span class="toggleAside" @click="toggleAside"></span>
+    <span class="toggleAside" @click="toggleAside">
+      <svg class="icon">
+        <use xlink:href="#icon-aside"></use>
+      </svg>
+    </span>
   </div>
 </template>
 
@@ -25,7 +29,7 @@ import { inject, Ref } from 'vue'
 export default {
   setup() {
     const asideVisible = inject<Ref<boolean>>('asideVisible')
-    console.log('topNav中的asideVisible.value为', asideVisible.value)
+    // console.log('topNav中的asideVisible.value为', asideVisible.value)
 
     const toggleAside = () => {
       asideVisible.value = !asideVisible.value
@@ -76,8 +80,11 @@ export default {
   > .toggleAside {
     width: 24px;
     height: 24px;
-    background: red;
-
+    // background: red;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
     position: absolute;
     left: 16px;
     top: 50%;

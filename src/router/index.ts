@@ -21,6 +21,18 @@ const router = createRouter({
                 component: () => import('../components/DocDefault.vue')
             },
             {
+                path: 'introduce',
+                component: () => import('../components/Introduce.vue')
+            },
+            {
+                path: 'fix',
+                component: () => import('../components/Fix.vue')
+            },
+            {
+                path: 'use',
+                component: () => import('../components/Use.vue')
+            },
+            {
                 path: 'switch',
                 component: () => import('../components/SwitchDemo.vue')
             },

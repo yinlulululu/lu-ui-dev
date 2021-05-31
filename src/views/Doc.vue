@@ -3,7 +3,19 @@
     <Topnav class="nav" />
     <div class="content">
       <aside class="aside-menu" :class="{ visible: asideVisible }">
-        <h2>组件列表</h2>
+        <h2>开发指南</h2>
+        <ol>
+          <li>
+            <router-link to="/doc/introduce">介绍</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/fix">安装</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/use">使用</router-link>
+          </li>
+        </ol>
+        <h2>基础组件</h2>
         <ol>
           <li>
             <router-link to="/doc/switch">Switch组件</router-link>
@@ -64,21 +76,35 @@ export default {
       bottom: 0;
       margin-top: 70px;
       height: auto;
-      width: 260px;
+      width: 270px;
       overflow-x: hidden;
-      overflow-y: scroll;
-      border-right: 1px solid #e8e8e8;
+      // overflow-y: scroll;
+      // border: 1px solid;
       z-index: 10;
-      box-shadow: 5px 0 5px rgb(51 51 51 / 10%);
+      // box-shadow: 5px 0 5px rgb(51 51 51 / 10%);
+      box-shadow: 5px 0 5px rgba($color: #1a1a1a, $alpha: 0.6);
       padding-bottom: 32px;
       background: #1a1a1a;
-      color: #ccc;
+      color: #aaa;
+      // &:hover {
+      //   border: 1px solid;
+      //   border-image: linear-gradient(#ff009a, #5545fb) 20;
+      // }
       > h2 {
         margin-top: 6px;
         line-height: 22px;
-        padding: 10px 12px;
-        font-size: 16px;
+        padding: 10px 40px;
+        font-size: 15px;
         font-weight: 700;
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: -webkit-linear-gradient(to right, #5545fb, #ff009a);
+          background: linear-gradient(to right, #5545fb, #ff009a);
+          margin-top: 10px;
+        }
       }
 
       > ol {
@@ -89,7 +115,7 @@ export default {
 
           > a {
             display: block;
-            padding: 12px 20px;
+            padding: 12px 40px;
             cursor: pointer;
             color: #fff;
 
@@ -101,8 +127,8 @@ export default {
           }
 
           .router-link-active {
-            background: -webkit-linear-gradient(to right, #5545fb, #ff009a);
-            background: linear-gradient(to right, #5545fb, #ff009a);
+            // background: -webkit-linear-gradient(to right, #5545fb, #ff009a);
+            // background: linear-gradient(to right, #5545fb, #ff009a);
             border-right: none;
 
             &:after {
@@ -110,8 +136,9 @@ export default {
               position: absolute;
               top: 0;
               right: 0;
-              height: 100%;
-              border-right: 3px solid #00cec9;
+              height: 85%;
+              border-right: 1px solid;
+              border-image: linear-gradient(#ff009a, #5545fb) 10;
             }
           }
         }
@@ -152,7 +179,6 @@ main {
 
       .aside-menu {
         width: 180px;
-        background-color: #fff;
         transition: all 0.25s ease;
         transform: translateX(-200px);
 

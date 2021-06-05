@@ -1,4 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+import { h } from 'vue'
+import Markdown from '../components/Markdown.vue'
+const md = (string: any) => h(Markdown, { content: string, key: string })
 const history = createWebHashHistory();
 const router = createRouter({
     history,
@@ -34,7 +37,7 @@ const router = createRouter({
             },
             {
                 path: 'switch',
-                component: () => import('../components/SwitchDemo.vue')
+                component: () => import('../components/SwitchDoc/SwitchDemo.vue')
             },
             {
                 path: 'button',

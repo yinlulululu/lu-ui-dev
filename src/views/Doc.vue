@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <Topnav class="nav" />
+    <Topnav class="nav" :visbibleMenuAside="true" />
     <div class="content">
       <aside class="aside-menu" :class="{ visible: asideVisible }">
         <h2>开发指南</h2>
@@ -18,16 +18,16 @@
         <h2>基础组件</h2>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch组件</router-link>
+            <router-link to="/doc/switch">Switch 开关</router-link>
           </li>
           <li>
-            <router-link to="/doc/button">Button组件</router-link>
+            <router-link to="/doc/button">Button 按钮</router-link>
           </li>
           <li>
-            <router-link to="/doc/dialog">Dialog组件</router-link>
+            <router-link to="/doc/dialog">Dialog 对话框</router-link>
           </li>
           <li>
-            <router-link to="/doc/tabs">Tabs组件</router-link>
+            <router-link to="/doc/tabs">Tabs 导航切换</router-link>
           </li>
         </ol>
       </aside>

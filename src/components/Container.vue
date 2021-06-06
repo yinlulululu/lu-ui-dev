@@ -47,7 +47,8 @@ export default {
       default: ''
     },
     component: {
-      type: Object
+      type: Object,
+      default: ''
     }
   },
   setup(props) {
@@ -92,7 +93,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      const codePer = this.$refs.codePer
+      const codePer: any = this.$refs.codePer
       let { height } = codePer.getBoundingClientRect()
       this.computedHeight = height
     })

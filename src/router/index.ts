@@ -1,4 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+
+import Introduce from '../views/markdown/introduce.md'
+import Fix from '../views/markdown/fix.md'
+import Use from '../views/markdown/use.md'
+
 import { h } from 'vue'
 import Markdown from '../components/Markdown.vue'
 const md = (string: any) => h(Markdown, { content: string, key: string })
@@ -21,19 +26,19 @@ const router = createRouter({
             component: () => import('../views/Doc.vue'),
             children: [{
                 path: '',
-                component: () => import('../components/DocDefault.vue')
+                component: () => import('../components/DefaultDoc/DocDefault.vue')
             },
             {
                 path: 'introduce',
-                component: () => import('../components/Introduce.vue')
+                component: md(Introduce)
             },
             {
                 path: 'fix',
-                component: () => import('../components/Fix.vue')
+                component: md(Fix)
             },
             {
                 path: 'use',
-                component: () => import('../components/Use.vue')
+                component: md(Use)
             },
             {
                 path: 'switch',
@@ -41,15 +46,15 @@ const router = createRouter({
             },
             {
                 path: 'button',
-                component: () => import('../components/ButtonDemo.vue')
+                component: () => import('../components/ButtonDoc/ButtonDemo.vue')
             },
             {
                 path: 'dialog',
-                component: () => import('../components/DialogDemo.vue')
+                component: () => import('../components/DialogDoc/DialogDemo.vue')
             },
             {
                 path: 'tabs',
-                component: () => import('../components/TabsDemo.vue')
+                component: () => import('../components/TabsDoc/TabsDemo.vue')
             }]
 
         }

@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import LuButton from '../lib/Button.vue'
+import LuButton from '../../lib/Button.vue'
 export default {
   components: {
     LuButton

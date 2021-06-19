@@ -104,7 +104,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   font-size: 14px;
-  color: #5e6d82;
+  color: #fff;
   h2 {
     font-weight: 400;
     color: #1f2f3d;
@@ -113,13 +113,13 @@ export default {
   }
   p {
     font-size: 14px;
-    color: #5e6d82;
+    color: #fff;
     line-height: 1.5em;
     margin: 14px 0;
   }
   .description {
     font-size: 14px;
-    color: #5e6d82;
+    color: #fff;
     line-height: 1.5em;
     margin: 14px 0;
   }

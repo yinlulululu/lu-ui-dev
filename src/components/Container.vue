@@ -11,7 +11,8 @@
       <div class="per-wrapper">
         <div class="per-content" :style="{ height: height + 'px' }">
           <div class="per-desc"></div>
-          <pre ref="codePer" class="language-html" v-html="html"></pre>
+          <pre class="language-html" v-html="html"></pre>
+          <!-- ref="codePer" -->
         </div>
         <div class="demo-block-control" @click="toggle">
           <svg class="down" aria-hidden="true">
@@ -35,6 +36,7 @@ import { computed, ref } from 'vue'
 import 'prismjs'
 import 'prismjs/themes/prism-coy.css'
 const Prism = (window as any).Prism
+
 export default {
   name: 'Container',
   props: {
@@ -47,14 +49,15 @@ export default {
       default: ''
     },
     component: {
-      type: Object,
-      default: ''
+      type: Object
     }
   },
-  setup(props) {
+  setup(props: any) {
+    console.log('props', props)
+    console.log(Prism)
     const show = ref(false)
     const height = ref(0)
-    const computedHeight = ref(0)
+    const computedHeight = ref(300)
 
     const toggle = () => {
       if (height.value === 0) {
@@ -72,9 +75,16 @@ export default {
     const showCode = computed(() => {
       return height.value !== 0
     })
+    // const html = computed(() => {
+    //   return Prism.highlight(
+    //     props.component._sourceCode,
+    //     Prism.languages.html,
+    //     'html'
+    //   )
+    // })
     const html = computed(() => {
       return Prism.highlight(
-        props.component._sourceCode,
+        props.component.__sourceCode,
         Prism.languages.html,
         'html'
       )
@@ -92,11 +102,11 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      const codePer: any = this.$refs.codePer
-      let { height } = codePer.getBoundingClientRect()
-      this.computedHeight = height
-    })
+    // this.$nextTick(() => {
+    //   const codePer: any = this.$refs.codePer
+    //   let { height } = codePer.getBoundingClientRect()
+    //   this.computedHeight = height
+    // })
   }
 }
 </script>
@@ -107,7 +117,7 @@ export default {
   color: #fff;
   h2 {
     font-weight: 400;
-    color: #1f2f3d;
+    color: #fff;
     font-size: 22px;
     margin: 55px 0 20px;
   }
@@ -166,7 +176,7 @@ export default {
       border-top: 1px solid #eaeefb;
       height: 44px;
       box-sizing: border-box;
-      background-color: #fff;
+      background-color: #000;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       text-align: center;
@@ -177,8 +187,9 @@ export default {
       left: 0;
 
       &:hover {
-        color: #00b894;
+        color: #ff009a;
         background-color: #f1ffff;
+        // background: linear-gradient(135deg, red, blue);
       }
 
       .down {

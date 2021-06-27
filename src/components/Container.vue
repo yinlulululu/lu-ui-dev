@@ -53,8 +53,8 @@ export default {
     }
   },
   setup(props: any) {
-    console.log('props', props)
-    console.log(Prism)
+    // console.log('props', props)
+    // console.log(Prism)
     const show = ref(false)
     const height = ref(0)
     const computedHeight = ref(300)
@@ -135,7 +135,8 @@ export default {
   }
   pre {
     margin: 0;
-    background-color: #fafcfd;
+    // background-color: #fafcfd;
+    background-color: #000;
     font-size: 15px;
     padding: 18px 24px;
   }
@@ -164,12 +165,16 @@ export default {
 
   .per-wrapper {
     .per-content {
-      background-color: #fafafa;
+      // background-color: #fafafa;
       border-top: 1px solid #eaeefb;
       overflow-y: hidden;
       overflow-x: auto;
       height: 0;
       transition: height 0.25s;
+      .language-html {
+        color: #fff;
+        // background-color: #fff;
+      }
     }
 
     .demo-block-control {
@@ -188,7 +193,7 @@ export default {
 
       &:hover {
         color: #ff009a;
-        background-color: #f1ffff;
+        // background-color: #000;
         // background: linear-gradient(135deg, red, blue);
       }
 

@@ -6,16 +6,33 @@
         可以使用<code>v-model</code>绑定一个<code>Boolean</code>类型的变量到<code>Switch</code>组件。
       </p>
     </Container>
+    <Container :component="SwitchDisabled">
+      <p>
+        可以使用<code>disabled</code>属性，以此来禁用<code>Switch</code>组件，它接受一个<code>Boolean</code>值。
+      </p>
+    </Container>
+    <Attr :data="data"></Attr>
   </div>
 </template>
 <script lang="ts">
 import Container from '../Container.vue'
 import SwitchNormal from './SwitchNormal.vue'
+import SwitchDisabled from './SwitchDisabled.vue'
+import Attr from '../Attr.vue'
 
 export default {
-  components: { Container },
+  components: { Container, Attr },
   setup() {
-    return { SwitchNormal }
+    const data = [
+      {
+        params: 'disabled',
+        desc: '禁止状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false'
+      }
+    ]
+    return { SwitchNormal, SwitchDisabled, data }
   }
 }
 </script>
@@ -25,6 +42,9 @@ export default {
   h1 {
     font-size: 28px;
   }
+  // .container {
+  //   height: 20px;
+  // }
   code {
     background: linear-gradient(to right, #5545fb, #ff009a);
     border-radius: 2px;

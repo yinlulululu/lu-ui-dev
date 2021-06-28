@@ -1,5 +1,10 @@
 <template>
-  <button class="lu-switch" @click="toggle" :class="{ 'lu-checked': value }">
+  <button
+    class="lu-switch"
+    @click="toggle"
+    :class="{ 'lu-checked': value }"
+    :disabled="loading ? true : disabled"
+  >
     <span></span>
   </button>
   <div>{{ value }}</div>
@@ -8,7 +13,11 @@
 <script lang="ts">
 export default {
   props: {
-    value: Boolean
+    value: Boolean,
+    disabled: {
+      type: Boolean,
+      default: false
+    }
   },
   setup(props, context) {
     const toggle = () => {
@@ -30,6 +39,10 @@ $h2: $h - 4px;
   background: grey;
   border-radius: $h / 2;
   position: relative;
+  display: inline-block;
+  line-height: $h;
+  vertical-align: middle;
+  background-color: #ccc;
   > span {
     position: absolute;
     top: 2px;

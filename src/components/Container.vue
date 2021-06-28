@@ -57,7 +57,7 @@ export default {
     // console.log(Prism)
     const show = ref(false)
     const height = ref(0)
-    const computedHeight = ref(300)
+    const computedHeight = ref(320)
 
     const toggle = () => {
       if (height.value === 0) {
@@ -75,13 +75,6 @@ export default {
     const showCode = computed(() => {
       return height.value !== 0
     })
-    // const html = computed(() => {
-    //   return Prism.highlight(
-    //     props.component._sourceCode,
-    //     Prism.languages.html,
-    //     'html'
-    //   )
-    // })
     const html = computed(() => {
       return Prism.highlight(
         props.component.__sourceCode,
@@ -119,7 +112,7 @@ export default {
     font-weight: 400;
     color: #fff;
     font-size: 22px;
-    margin: 55px 0 20px;
+    margin: 20px 0 20px;
   }
   p {
     font-size: 14px;

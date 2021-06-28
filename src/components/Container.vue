@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>{{ component.__sourceCodeTitle }}</h2>
-    <p>{{ description }}</p>
+    <!-- <p>{{ description }}</p> -->
     <div class="description"><slot /></div>
     <!--展示代码的地方-->
     <div class="fold-code" @mouseenter="enter" @mouseleave="leave">
@@ -112,7 +112,10 @@ export default {
     font-weight: 400;
     color: #fff;
     font-size: 22px;
-    margin: 20px 0 20px;
+    margin: 40px 0 20px;
+    @media (max-width: 500px) {
+      margin: 20px 0 0 0;
+    }
   }
   p {
     font-size: 14px;
@@ -124,7 +127,10 @@ export default {
     font-size: 14px;
     color: #fff;
     line-height: 1.5em;
-    margin: 14px 0;
+    margin: 10px 0 20px 0;
+    @media (max-wdith: 500px) {
+      margin-top: 10px 0;
+    }
   }
   pre {
     margin: 0;
@@ -142,7 +148,7 @@ export default {
     //height: 0;
     overflow: hidden;
     border: 1px solid #ebebeb;
-    border-radius: 3px;
+    border-radius: 8px;
     transition: 0.2s;
     max-width: 800px;
 
@@ -154,6 +160,10 @@ export default {
         transform: translateX(-35px);
       }
     }
+    // .component {
+    //   width: 20px;
+    //   height: 20px;
+    // }
   }
 
   .per-wrapper {

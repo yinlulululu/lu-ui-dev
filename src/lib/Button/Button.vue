@@ -29,15 +29,20 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    round: {
+      type: Boolean,
+      default: false
     }
   },
   setup(props) {
-    const { theme, size, level } = props
+    const { theme, size, level, round } = props
     const classes = computed(() => {
       return {
         [`lu-theme-${theme}`]: theme,
         [`lu-size-${size}`]: size,
-        [`lu-level-${level}`]: level
+        [`lu-level-${level}`]: level,
+        [`lu-${round ? 'round' : 'normal'}`]: round
       }
     })
     return { classes }

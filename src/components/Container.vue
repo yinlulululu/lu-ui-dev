@@ -11,7 +11,7 @@
       <div class="per-wrapper">
         <div class="per-content" :style="{ height: height + 'px' }">
           <div class="per-desc"></div>
-          <pre class="language-html" v-html="html"></pre>
+          <pre class="language-html" ref="codePer" v-html="html"></pre>
           <!-- ref="codePer" -->
         </div>
         <div class="demo-block-control" @click="toggle">
@@ -95,11 +95,11 @@ export default {
     }
   },
   mounted() {
-    // this.$nextTick(() => {
-    //   const codePer: any = this.$refs.codePer
-    //   let { height } = codePer.getBoundingClientRect()
-    //   this.computedHeight = height
-    // })
+    this.$nextTick(() => {
+      const codePer: any = this.$refs.codePer
+      let { height } = codePer.getBoundingClientRect()
+      this.computedHeight = height
+    })
   }
 }
 </script>
@@ -142,6 +142,12 @@ export default {
 
   .demo-wrapper {
     padding: 24px;
+    height: 100px;
+    lu-switch {
+      width: 50px;
+      height: 30px;
+      z-index: 200;
+    }
   }
 
   .fold-code {

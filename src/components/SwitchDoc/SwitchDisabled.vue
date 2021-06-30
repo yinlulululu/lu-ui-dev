@@ -7,7 +7,12 @@
 
 <script lang="ts">
 import { ref } from 'vue'
+import LuSwitch from '../../lib/Switch/Switch.vue'
 export default {
+  name: 'SwitchDisabled',
+  components: {
+    LuSwitch
+  },
   setup() {
     const checked = ref(false)
     return { checked }

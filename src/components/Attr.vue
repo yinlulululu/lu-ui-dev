@@ -77,14 +77,14 @@ export default {
     text-align: left;
     color: #fff;
     font-weight: 400;
-    border-bottom: 1px solid #5545fb;
+    border-bottom: 1px solid #ff009a;
     padding: 15px;
     max-width: 250px;
   }
 
   .td {
     color: #fff;
-    border-bottom: 1px solid #ff009a;
+    border-bottom: 1px solid #5f59a7;
     // border-bottom: 1px solid;
     // border-image: linear-gradient(#ff009a, #5545fb) 10;
   }

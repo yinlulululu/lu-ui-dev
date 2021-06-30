@@ -4,81 +4,96 @@
     <Container :component="ButtonNormal">
       <p>可以使用<code>level</code>属性来定义按钮的样式</p>
     </Container>
-    <br />
-    <h1>示例1</h1>
-    <div>
-      <lu-button @click="onClick">默认按钮</lu-button>
-      <lu-button theme="button">普通按钮</lu-button>
-      <lu-button theme="link">链接按钮</lu-button>
-      <lu-button theme="text">文本按钮</lu-button>
-    </div>
-    <h1>示例2</h1>
-    <div>
-      <div>
-        <lu-button size="small">小号按钮</lu-button>
-        <lu-button>默认按钮</lu-button>
-        <lu-button size="big">大号按钮</lu-button>
-      </div>
-      <div>
-        <lu-button theme="link" size="small">小号链接按钮</lu-button>
-        <lu-button theme="link">默认链接你好</lu-button>
-        <lu-button theme="link" size="big">大号链接按钮</lu-button>
-      </div>
-      <div>
-        <lu-button theme="text" size="small">小号文本按钮</lu-button>
-        <lu-button theme="text">默认文本按钮</lu-button>
-        <lu-button theme="text" size="big">大号文本按钮</lu-button>
-      </div>
-    </div>
-    <h1>示例3</h1>
-    <div>
-      <div>
-        <lu-button level="main">主要按钮</lu-button>
-        <lu-button>普通按钮</lu-button>
-        <lu-button level="danger">危险按钮</lu-button>
-      </div>
-      <div>
-        <lu-button theme="link" level="main">主要链接按钮</lu-button>
-        <lu-button theme="link">普通链接按钮</lu-button>
-        <lu-button theme="link" level="danger">危险链接按钮</lu-button>
-      </div>
-      <div>
-        <lu-button theme="text" level="main">主要文本按钮</lu-button>
-        <lu-button theme="text">普通文本按钮</lu-button>
-        <lu-button theme="text" level="danger">危险文本按钮</lu-button>
-      </div>
-    </div>
-    <h1>示例4</h1>
-    <div>
-      <lu-button disabled>禁用按钮</lu-button>
-      <lu-button disabled theme="link">禁用链接按钮</lu-button>
-      <lu-button disabled theme="text">禁用文本按钮</lu-button>
-    </div>
-    <h1>示例5</h1>
-    <div>
-      <lu-button loading>加载按钮</lu-button>
-      <lu-button>加载完毕</lu-button>
-    </div>
+    <Container :component="ButtonSize">
+      <p>
+        可以使用<code>size</code>属性来定义按钮的大小，它接受<code>big</code>,<code>small</code>属性值
+      </p>
+    </Container>
+    <Container :component="ButtonRound">
+      <p>
+        可以使用<code>round</code>属性来定义按钮是圆形，它接受一个<code>Boolean</code>值
+      </p>
+    </Container>
+    <Container :component="ButtonDisabled">
+      <p>
+        可以使用<code>disabled</code>属性来定义按钮是禁用，它接受一个<code>Boolean</code>值
+      </p>
+    </Container>
+    <Container :component="ButtonLoading">
+      <p>
+        可以使用<code>loading</code>属性来定义按钮是加载，它接受一个<code>Boolean</code>值
+      </p>
+    </Container>
+    <Attr :data="data"></Attr>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import LuButton from '../../lib/Button/Button.vue'
 
 import Container from '../Container.vue'
 import ButtonNormal from './ButtonNormal.vue'
+import ButtonSize from './ButtonSize.vue'
+import ButtonDisabled from './ButtonDisabled.vue'
+import ButtonRound from './ButtonRound.vue'
+import ButtonLoading from './ButtonLoading.vue'
+import Attr from '../Attr.vue'
 export default {
   components: {
     LuButton,
     Container,
+    Attr
   },
   setup() {
+    const data = [
+      {
+        parmas: 'theme',
+        desc: '按钮类型',
+        type: 'string',
+        select: 'default / primary / success / warning / error',
+        default: 'default'
+      },
+      {
+        params: 'size',
+        desc: '尺寸',
+        type: 'string',
+        select: 'normal / small / big',
+        default: 'normal'
+      },
+      {
+        params: 'round',
+        desc: '圆形边框',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false'
+      },
+      {
+        params: 'disabled',
+        desc: '禁止状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false'
+      },
+
+      {
+        params: 'loading',
+        desc: '加载中',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false'
+      }
+    ]
     const onClick = () => {
       alert('按钮已点击')
     }
     return {
       onClick,
-      ButtonNormal
+      ButtonNormal,
+      ButtonSize,
+      ButtonDisabled,
+      ButtonRound,
+      ButtonLoading,
+      data
     }
   }
 }

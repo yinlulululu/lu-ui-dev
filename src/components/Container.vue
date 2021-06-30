@@ -142,7 +142,7 @@ export default {
 
   .demo-wrapper {
     padding: 24px;
-    height: 100px;
+    // height: 50px;
     lu-switch {
       width: 50px;
       height: 30px;

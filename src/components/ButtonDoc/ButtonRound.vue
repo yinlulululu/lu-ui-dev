@@ -1,5 +1,5 @@
 <demo>
-圆形边框
+圆形按钮
 </demo>
 <template>
   <lu-button round>默认按钮</lu-button>

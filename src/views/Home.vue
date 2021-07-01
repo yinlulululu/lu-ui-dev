@@ -43,7 +43,7 @@
           <img src="../assets/images/me.jpeg" alt="" />
         </div>
         <h4 class="name">尹露</h4>
-        <p class="position">软件开发工程师</p>
+        <p class="position">前端开发工程师</p>
         <ul class="social-links">
           <li>
             <a href="#">

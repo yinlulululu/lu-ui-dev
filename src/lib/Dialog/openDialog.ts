@@ -5,8 +5,8 @@ export const openDialog = (options: any) => {
     const { title, content, ok, cancel, bottomButton } = options
     const div = document.createElement('div')
     document.body.appendChild(div)
-
     const close = () => {
+        // @ts-ignore
         app.unmount(div)
         div.remove()
     }

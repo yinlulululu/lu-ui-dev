@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import LuSwitch from '../../lib/Switch/Switch.vue'
+import LuSwitch from '../../../lib/Switch/Switch.vue'
 
 export default {
   name: 'SwitchNormal',

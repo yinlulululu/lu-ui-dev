@@ -42,15 +42,15 @@ const router = createRouter({
             },
             {
                 path: 'switch',
-                component: () => import('../components/SwitchDoc/SwitchDemo.vue')
+                component: () => import('../components/SwitchDoc/index.vue')
             },
             {
                 path: 'button',
-                component: () => import('../components/ButtonDoc/ButtonDemo.vue')
+                component: () => import('../components/ButtonDoc/index.vue')
             },
             {
                 path: 'dialog',
-                component: () => import('../components/DialogDoc/DialogDemo.vue')
+                component: () => import('../components/DialogDoc/index.vue')
             },
             {
                 path: 'tabs',

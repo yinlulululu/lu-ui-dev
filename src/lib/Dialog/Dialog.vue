@@ -63,6 +63,11 @@ export default {
       props.cancel && props.cancel()
       close()
     }
+    const cancel = () => {
+        props.cancel && props.cancel()
+        // 等价与props.cancel?.()
+        close()
+    }
     return { close, onClickOverlay, showTitle, ok, cancel }
   }
 }
@@ -85,7 +90,7 @@ $border-color: #d9d9d9;
     left: 0;
     width: 100%;
     height: 100%;
-    background: fade-out($color: ddd, $amount: 0.3);
+    background: fade-out($color: #ddd, $amount: 0.3);
     z-index: 10;
   }
   &-wrapper {

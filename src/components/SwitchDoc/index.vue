@@ -16,8 +16,8 @@
 </template>
 <script lang="ts">
 import Container from '../Container.vue'
-import SwitchNormal from './SwitchNormal.vue'
-import SwitchDisabled from './SwitchDisabled.vue'
+import SwitchNormal from './SwitchDemo/SwitchNormal.vue'
+import SwitchDisabled from './SwitchDemo/SwitchDisabled.vue'
 import Attr from '../Attr.vue'
 
 export default {

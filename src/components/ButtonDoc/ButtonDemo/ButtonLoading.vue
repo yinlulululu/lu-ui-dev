@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import LuButton from '../../lib/Button/Button.vue'
+import LuButton from '../../../lib/Button/Button.vue'
 export default {
   name: 'ButtonLoading',
   components: {

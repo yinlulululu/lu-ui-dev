@@ -32,11 +32,11 @@
 import LuButton from '../../lib/Button/Button.vue'
 
 import Container from '../Container.vue'
-import ButtonNormal from './ButtonNormal.vue'
-import ButtonSize from './ButtonSize.vue'
-import ButtonDisabled from './ButtonDisabled.vue'
-import ButtonRound from './ButtonRound.vue'
-import ButtonLoading from './ButtonLoading.vue'
+import ButtonNormal from './ButtonDemo/ButtonSize.vue'
+import ButtonSize from './ButtonDemo/ButtonSize.vue'
+import ButtonDisabled from './ButtonDemo/ButtonDisabled.vue'
+import ButtonRound from './ButtonDemo/ButtonRound.vue'
+import ButtonLoading from './ButtonDemo/ButtonLoading.vue'
 import Attr from '../Attr.vue'
 export default {
   components: {

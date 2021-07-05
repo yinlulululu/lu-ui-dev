@@ -12,9 +12,10 @@ export const openDialog = (options: any) => {
     }
     const app = createApp({
         render() {
-            return h(Dialog, {
+            return h(
+                Dialog, {
                 visible: true,
-                'onUpdate: visible': (newVisible: any) => {
+                'onUpdate:visible': (newVisible: boolean) => {
                     if (newVisible === false) {
                         close()
                     }

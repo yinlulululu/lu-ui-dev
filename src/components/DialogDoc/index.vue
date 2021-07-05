@@ -10,7 +10,6 @@
 </template>
 
 <script lang="ts">
-import { ref } from '@vue/reactivity'
 import Container from '../Container.vue'
 import DialogNormal from '../DialogDoc/DialogDemo/DialogNormal.vue'
 export default {

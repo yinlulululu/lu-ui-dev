@@ -5,7 +5,7 @@
       <div class="lu-dialog">
         <span class="lu-dialog-close" @click="close"></span>
         <header v-if="showTitle">
-          <h1></h1>
+          <h1>{{ title }}</h1>
         </header>
         <main>
           <slot />
@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { computed } from '@vue/runtime-core'
 import Button from '../Button/Button.vue'
 export default {
@@ -60,20 +60,22 @@ export default {
       return props.title !== ''
     })
     const ok = () => {
-      props.cancel && props.cancel()
-      close()
+      if (props.ok && props.ok() !== false) {
+        // 等价于props.ok?.() !==false
+        close()
+      }
     }
     const cancel = () => {
-        props.cancel && props.cancel()
-        // 等价与props.cancel?.()
-        close()
+      props.cancel && props.cancel()
+      // 等价与props.cancel?.()
+      close()
     }
     return { close, onClickOverlay, showTitle, ok, cancel }
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $radius: 4px;
 $border-color: #d9d9d9;
 .lu-dialog {

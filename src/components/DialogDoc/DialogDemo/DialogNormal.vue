@@ -13,7 +13,6 @@ import LuButton from '../../../lib/Button/Button.vue'
 import LuDialog from '../../../lib/Dialog/Dialog.vue'
 export default {
   components: {
-    LuButton,
     LuDialog
   },
   setup() {

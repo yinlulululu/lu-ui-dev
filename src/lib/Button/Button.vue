@@ -22,10 +22,6 @@ export default {
       type: String,
       default: 'normal'
     },
-    // level: {
-    //   type: String,
-    //   default: 'normal'
-    // },
     disabled: {
       type: Boolean,
       default: false

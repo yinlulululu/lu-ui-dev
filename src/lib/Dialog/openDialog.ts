@@ -24,7 +24,7 @@ export const openDialog = (options: any) => {
                 bottomButton,
                 ok,
                 cancel,
-            }, { content })
+            }, { content: () => content })
         }
     })
     app.mount(div)

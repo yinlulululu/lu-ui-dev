@@ -6,19 +6,24 @@
         可以使用<code>v-model</code>绑定一个<code>Boolean</code>类型的变量到<code>Dialog</code>组件
       </p>
     </Container>
+    <Container :component="DialogOnCode">
+      <p>可以引入<code>openDialog</code>模块创建一个<code>Dialog</code>组件</p>
+    </Container>
   </div>
 </template>
 
 <script lang="ts">
 import Container from '../Container.vue'
 import DialogNormal from '../DialogDoc/DialogDemo/DialogNormal.vue'
+import DialogOnCode from '../DialogDoc/DialogDemo/DialogOnCode.vue'
 export default {
   components: {
     Container
   },
   setup() {
     return {
-      DialogNormal
+      DialogNormal,
+      DialogOnCode
     }
   }
 }

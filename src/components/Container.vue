@@ -108,13 +108,17 @@ export default {
 .container {
   font-size: 14px;
   color: #fff;
+  @media (max-width: 500px) {
+    padding: 0 5px;
+  }
   h2 {
     font-weight: 400;
     color: #fff;
     font-size: 22px;
     margin: 40px 0 20px;
     @media (max-width: 500px) {
-      margin: 20px 0 0 0;
+      margin: 40px 0 0 0;
+      font-size: 18px;
     }
   }
   p {

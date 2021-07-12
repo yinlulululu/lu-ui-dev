@@ -69,7 +69,7 @@ export default {
         desc: '确认按钮执行函数',
         type: 'Function',
         select:
-          'function return false（不关闭Dialog） / function return true（关闭Dialog）',
+          'function return false（不关闭Dialog）  function return true（关闭Dialog）',
         default: 'null'
       },
       {

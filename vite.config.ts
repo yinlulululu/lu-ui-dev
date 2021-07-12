@@ -20,5 +20,8 @@ import {
 export default defineConfig({
     base: "./",
     assetsDir: "assets",
+    server: {
+        host: '0.0.0.0'
+    },
     plugins: [vue(), vueDemoPlugin, md()],
 })

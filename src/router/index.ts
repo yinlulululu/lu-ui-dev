@@ -54,7 +54,7 @@ const router = createRouter({
             },
             {
                 path: 'tabs',
-                component: () => import('../components/TabsDoc/TabsDemo.vue')
+                component: () => import('../components/TabsDoc/index.vue')
             }]
 
         }

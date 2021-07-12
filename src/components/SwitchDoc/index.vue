@@ -27,7 +27,7 @@ export default {
       {
         params: 'disabled',
         desc: '禁止状态',
-        type: 'boolean',
+        type: 'Boolean',
         select: 'false / true',
         default: 'false'
       }
@@ -46,7 +46,7 @@ export default {
   //   height: 20px;
   // }
   code {
-    background: linear-gradient(to right, #5545fb, #ff009a);
+    background: linear-gradient(to right, #ff0099e0, #5545fb);
     border-radius: 2px;
     padding: 3px 5px;
     margin: 0 3px;

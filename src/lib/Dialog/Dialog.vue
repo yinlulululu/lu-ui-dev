@@ -29,13 +29,13 @@ export default {
   props: {
     visible: {
       type: Boolean,
-      default: true
+      default: false
     },
     bottomButton: {
       type: Boolean,
-      default: true
+      default: false
     },
-    closeOnclickOverlay: {
+    closeOnClickOverlay: {
       type: Boolean,
       default: true
     },
@@ -46,7 +46,7 @@ export default {
     ok: Function,
     cancel: Function
   },
-  components: {
+components: {
     Button
   },
   setup(props, context) {
@@ -54,7 +54,7 @@ export default {
       context.emit('update:visible', false)
     }
     const onClickOverlay = () => {
-      if (props.closeOnclickOverlay) {
+      if (props.closeOnClickOverlay) {
         close()
       }
     }
@@ -110,7 +110,7 @@ $border-color: #d9d9d9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 18px;
     padding: 12px 16px;
     // border-bottom: 1px solid $border-color;
     > h1 {

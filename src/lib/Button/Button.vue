@@ -12,7 +12,7 @@
 <script lang="ts">
 import { computed } from '@vue/runtime-core'
 export default {
-  inheritAttrs: false,
+  name: 'Button',
   props: {
     theme: {
       type: String,

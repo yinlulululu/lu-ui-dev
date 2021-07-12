@@ -2,7 +2,7 @@
 基础使用
 </demo>
 <template>
-  <lu-button>默认按钮</lu-button>
+  <lu-button theme="default" >默认按钮</lu-button>
   <lu-button theme="primary">主题按钮</lu-button>
   <lu-button theme="success">成功按钮</lu-button>
   <lu-button theme="warning">警告按钮</lu-button>

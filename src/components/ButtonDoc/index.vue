@@ -2,7 +2,7 @@
   <div class="lu-button-demo">
     <h1>Button 按钮</h1>
     <Container :component="ButtonNormal">
-      <p>可以使用<code>level</code>属性来定义按钮的样式</p>
+      <p>可以使用<code>theme</code>属性来定义按钮的样式</p>
     </Container>
     <Container :component="ButtonSize">
       <p>
@@ -32,7 +32,7 @@
 import LuButton from '../../lib/Button/Button.vue'
 
 import Container from '../Container.vue'
-import ButtonNormal from './ButtonDemo/ButtonSize.vue'
+import ButtonNormal from './ButtonDemo/ButtonNormal.vue'
 import ButtonSize from './ButtonDemo/ButtonSize.vue'
 import ButtonDisabled from './ButtonDemo/ButtonDisabled.vue'
 import ButtonRound from './ButtonDemo/ButtonRound.vue'
@@ -49,28 +49,28 @@ export default {
       {
         parmas: 'theme',
         desc: '按钮类型',
-        type: 'string',
+        type: 'String',
         select: 'default / primary / success / warning / error',
         default: 'default'
       },
       {
         params: 'size',
         desc: '尺寸',
-        type: 'string',
+        type: 'String',
         select: 'normal / small / big',
         default: 'normal'
       },
       {
         params: 'round',
         desc: '圆形边框',
-        type: 'boolean',
+        type: 'Boolean',
         select: 'false / true',
         default: 'false'
       },
       {
         params: 'disabled',
         desc: '禁止状态',
-        type: 'boolean',
+        type: 'Boolean',
         select: 'false / true',
         default: 'false'
       },
@@ -78,7 +78,7 @@ export default {
       {
         params: 'loading',
         desc: '加载中',
-        type: 'boolean',
+        type: 'Boolean',
         select: 'false / true',
         default: 'false'
       }
@@ -105,7 +105,7 @@ export default {
     font-size: 28px;
   }
   code {
-    background: linear-gradient(to right, #5545fb, #ff009a);
+    background: linear-gradient(to right, #ff0099e0, #5545fb);
     border-radius: 2px;
     padding: 3px 5px;
     margin: 0 3px;

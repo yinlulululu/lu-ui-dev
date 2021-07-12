@@ -1,17 +1,19 @@
 <demo>
-基本用法
+按钮功能
 </demo>
 <template>
   <lu-button theme="primary" @click="toggle">打开Dialog</lu-button>
-  <lu-dialog v-model:visible="showDialog">
+  <lu-dialog v-model:visible="showDialog" bottomButton="true" :ok="ok" :cancel="cancel">
     <p>Dialog内容</p>
   </lu-dialog>
 </template>
+
 <script lang="ts">
 import { ref } from 'vue'
 import LuButton from '../../../lib/Button/Button.vue'
 import LuDialog from '../../../lib/Dialog/Dialog.vue'
 export default {
+  name: 'DialogButton',
   components: {
     LuDialog,
     LuButton
@@ -21,9 +23,18 @@ export default {
     const toggle = () => {
       showDialog.value = !showDialog.value
     }
+    const ok = () => {
+      console.log('确定')
+      return true
+    }
+    const cancel = () => {
+      console.log('取消')
+    }
     return {
       showDialog,
-      toggle
+      toggle,
+      ok,
+      cancel
     }
   }
 }

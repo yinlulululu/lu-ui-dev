@@ -96,10 +96,15 @@ export default {
 .lu-dialog-demo {
   h1 {
     font-size: 28px;
+    @media (max-width: 500px) {
+      font-size: 22px;
+      padding-left: 5px;
+      margin-bottom: 0;
+    }
   }
   code {
     background: linear-gradient(to right, #ff0099e0, #5545fb);
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 3px 5px;
     margin: 0 3px;
   }

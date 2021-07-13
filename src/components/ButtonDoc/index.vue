@@ -111,13 +111,9 @@ export default {
   }
   code {
     background: linear-gradient(to right, #ff0099e0, #5545fb);
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 3px 5px;
     margin: 0 3px;
-    @media (max-width: 500px) {
-      // margin: 10px 3px;
-      margin-bottom: 10px;
-    }
   }
 }
 </style>

@@ -134,6 +134,7 @@ export default {
     margin: 10px 0 20px 0;
     @media (max-wdith: 500px) {
       margin-top: 10px 0;
+      line-height: 20px;
     }
   }
   pre {

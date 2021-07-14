@@ -11,6 +11,8 @@
 </template>
 
 <script lang="ts">
+import { ref } from '@vue/reactivity'
+import { onMounted } from '@vue/runtime-core'
 export default {
   name: 'lu-tabs',
   props: {
@@ -19,7 +21,14 @@ export default {
       default: ''
     }
   },
-  setup(props, context) {}
+  setup(props, context) {
+    const selectedItem = ref<HTMLDivElement>()
+    const indicator = ref<HTMLDivElement>()
+    const container = ref<HTMLDivElement>()
+    onMounted(() => {
+        
+    })
+  }
 }
 </script>
 

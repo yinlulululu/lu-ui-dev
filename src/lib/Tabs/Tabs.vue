@@ -22,8 +22,11 @@ export default {
     }
   },
   setup(props, context) {
+    // @ts-ignore
     const selectedItem = ref<HTMLDivElement>(null)
+    // @ts-ignore
     const indicator = ref<HTMLDivElement>(null)
+    // @ts-ignore
     const container = ref<HTMLDivElement>(null)
     onMounted(() => {
       watchEffect(
@@ -43,6 +46,7 @@ export default {
       )
     })
     // 获取插槽节点
+    // @ts-ignore
     const colNodes = context.slots.default()
 
     colNodes.forEach((tabNode) => {
@@ -52,7 +56,6 @@ export default {
       }
     })
     // 返回当前选中节点
-
   }
 }
 </script>

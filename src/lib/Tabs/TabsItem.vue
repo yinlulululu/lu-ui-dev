@@ -1,10 +1,19 @@
 <template>
-  <div></div>
+  <div :disabled="disabled">
+    <slot />
+  </div>
 </template>
-
 <script lang="ts">
-export default {}
+
+export default {
+  name: "lu-tab",
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss"></style>

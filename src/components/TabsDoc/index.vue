@@ -8,19 +8,39 @@
         >
       </p>
     </Container>
+    <Container :component="TabsDisabled">
+      <p>
+        可以使用<code>disabled</code>属性定义<code>Tab</code>组件禁止状态，它接受一个<code>Boolean</code>值。
+      </p>
+    </Container>
+    <Attr :data="data"></Attr>
   </div>
 </template>
 
 <script lang=ts>
 import Container from '../Container.vue'
+import Attr from '../Attr.vue'
 import TabsNormal from '../TabsDoc/TabsDemo/TabsNormal.vue'
+import TabsDisabled from '../TabsDoc/TabsDemo/TabsDisabled.vue'
 export default {
   components: {
-    Container
+    Container,
+    Attr
   },
   setup() {
+    const data = [
+      {
+        params: 'disabled',
+        desc: '禁止状态',
+        type: 'boolean',
+        select: 'false / true',
+        default: 'false'
+      }
+    ]
     return {
-      TabsNormal
+      TabsNormal,
+      TabsDisabled,
+      data
     }
   }
 }

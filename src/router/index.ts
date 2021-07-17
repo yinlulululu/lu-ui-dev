@@ -55,6 +55,10 @@ const router = createRouter({
             {
                 path: 'tabs',
                 component: () => import('../components/TabsDoc/index.vue')
+            },
+            {
+                path: 'layout',
+                component: () => import('../components/LayoutDoc/index.vue')
             }]
 
         }

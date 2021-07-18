@@ -32,6 +32,12 @@
           <li>
             <router-link to="/doc/layout">Layout 布局</router-link>
           </li>
+          <li>
+            <router-link to="/doc/radio">Radio 单选框</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/table">Table 表格</router-link>
+          </li>
         </ol>
       </aside>
       <main>

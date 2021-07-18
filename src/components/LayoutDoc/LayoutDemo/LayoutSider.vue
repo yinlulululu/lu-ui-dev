@@ -49,7 +49,7 @@ export default {
   }
   .sider {
     min-width: 80px;
-    background-color: #a101fe;
+    background-color: #0BB6D6;
     line-height: 120px;
   }
 }

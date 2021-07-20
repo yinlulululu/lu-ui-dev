@@ -37,7 +37,7 @@ export default {
   props: {
     selected: String
   },
-  setup(props, context) {
+  setup(props: any, context: any) {
     // @ts-ignore
     const selectedItem = ref<HTMLDivElement>(null)
     // @ts-ignore
@@ -66,7 +66,7 @@ export default {
     // @ts-ignore
     const colNodes = context.slots.default()
 
-    colNodes.forEach((tabNode) => {
+    colNodes.forEach((tabNode:any) => {
       // @ts-ignore
       if (tabNode.type.name !== TabsItem.name) {
         throw new Error('t-tabs 子标签必须是 t-tab')

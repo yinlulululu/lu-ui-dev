@@ -32,7 +32,7 @@ export default {
     },
     value: null
   },
-  setup(props, context) {
+  setup(props: any, context: any) {
     const model = computed({
       get() {
         return props.value

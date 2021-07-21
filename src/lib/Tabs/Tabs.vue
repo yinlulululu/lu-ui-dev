@@ -66,7 +66,7 @@ export default {
     // @ts-ignore
     const colNodes = context.slots.default()
 
-    colNodes.forEach((tabNode:any) => {
+    colNodes.forEach((tabNode: any) => {
       // @ts-ignore
       if (tabNode.type.name !== TabsItem.name) {
         throw new Error('t-tabs 子标签必须是 t-tab')

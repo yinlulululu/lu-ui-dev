@@ -36,7 +36,10 @@
             <router-link to="/doc/radio">Radio 单选框</router-link>
           </li>
           <li>
-            <router-link to="/doc/table">Table 表格</router-link>
+            <router-link to="/doc/input">Input 输入框</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/grid">Grid 栅格</router-link>
           </li>
         </ol>
       </aside>

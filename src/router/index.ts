@@ -65,12 +65,16 @@ const router = createRouter({
                 component: () => import('../components/RadioDoc/index.vue')
             },
             {
-                path: 'input',
-                component: () => import('../components/InputDoc/index.vue')
-            },
-            {
                 path: 'grid',
                 component: () => import('../components/GridDoc/index.vue')
+            },
+            {
+                path: 'toast',
+                component: () => import('../components/ToastDoc/index.vue')
+            },
+            {
+                path: 'input',
+                component: () => import('../components/InputDoc/index.vue')
             }
             ]
 

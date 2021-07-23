@@ -9,8 +9,8 @@
 </template>
 <script lang="ts">
 import { ref } from 'vue'
-import LuButton from '../../../lib/Button/Button.vue'
-import LuDialog from '../../../lib/Dialog/Dialog.vue'
+import LuButton from '@/lib/Button/Button.vue'
+import LuDialog from '@/lib/Dialog/Dialog.vue'
 export default {
   components: {
     LuDialog,

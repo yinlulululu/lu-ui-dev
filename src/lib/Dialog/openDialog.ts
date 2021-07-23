@@ -1,4 +1,4 @@
-import Dialog from './Dialog.vue'
+import Dialog from '@/lib/Dialog/Dialog.vue'
 import { createApp, h } from '@vue/runtime-dom'
 
 export const openDialog = (options: any) => {

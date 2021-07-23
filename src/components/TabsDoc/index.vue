@@ -18,10 +18,10 @@
 </template>
 
 <script lang=ts>
-import Container from '../Container.vue'
-import Attr from '../Attr.vue'
-import TabsNormal from '../TabsDoc/TabsDemo/TabsNormal.vue'
-import TabsDisabled from '../TabsDoc/TabsDemo/TabsDisabled.vue'
+import Container from '@/components/Container.vue'
+import Attr from '@/components/Attr.vue'
+import TabsNormal from '@/components/TabsDoc/TabsDemo/TabsNormal.vue'
+import TabsDisabled from '@/components/TabsDoc/TabsDemo/TabsDisabled.vue'
 export default {
   components: {
     Container,

@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import LuButton from '../../../lib/Button/Button.vue'
-import { openDialog } from '../../../lib/Dialog/openDialog'
+import LuButton from '@/lib/Button/Button.vue'
+import { openDialog } from '@/lib/Dialog/openDialog'
 export default {
   components: {
     LuButton

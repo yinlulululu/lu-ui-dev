@@ -13,6 +13,8 @@ import {
 import {
     md
 } from './plugins/markdown'
+const resolve = (dir: string) => path.join(__dirname, dir);
+const path = require('path');
 
 
 
@@ -22,6 +24,11 @@ export default defineConfig({
     assetsDir: "assets",
     server: {
         host: '0.0.0.0'
+    },
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "./src"),
+        },
     },
     plugins: [vue(), vueDemoPlugin, md()],
 })

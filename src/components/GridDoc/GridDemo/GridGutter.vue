@@ -4,26 +4,26 @@
 <template>
   <div class="gutter">
     <lu-row gutter="30">
-      <lu-col span="12"><div class="dark"></div></lu-col>
-      <lu-col span="12"><div class="light"></div></lu-col>
+      <lu-col span="12"><div class="pink"></div></lu-col>
+      <lu-col span="12"><div class="green"></div></lu-col>
     </lu-row>
 
     <lu-row gutter="20">
-      <lu-col span="8"><div class="bg"></div></lu-col>
-      <lu-col span="8"><div class="light"></div></lu-col>
-      <lu-col span="8"><div class="dark"></div></lu-col>
+      <lu-col span="8"><div class="blue"></div></lu-col>
+      <lu-col span="8"><div class="green"></div></lu-col>
+      <lu-col span="8"><div class="pink"></div></lu-col>
     </lu-row>
     <lu-row gutter="10">
-      <lu-col span="6"><div class="light"></div></lu-col>
-      <lu-col span="6"><div class="dark"></div></lu-col>
-      <lu-col span="6"><div class="bg"></div></lu-col>
-      <lu-col span="6"><div class="light"></div></lu-col>
+      <lu-col span="6"><div class="green"></div></lu-col>
+      <lu-col span="6"><div class="pink"></div></lu-col>
+      <lu-col span="6"><div class="blue"></div></lu-col>
+      <lu-col span="6"><div class="green"></div></lu-col>
     </lu-row>
   </div>
 </template>
 <script lang="ts">
-import LuRow from '../../../lib/Grid/Row.vue'
-import LuCol from '../../../lib/Grid/Col.vue'
+import LuRow from '@/lib/Grid/Row.vue'
+import LuCol from '@/lib/Grid/Col.vue'
 export default {
   name: 'GridGutter',
   components: {
@@ -34,13 +34,13 @@ export default {
 </script>
 
 <style scoped>
-.dark {
+.pink {
   background-color: #ff0099;
 }
-.bg {
+.blue {
   background-color: #5545fb;
 }
-.light {
+.green {
   background-color: #0bb6d6;
 }
 div {

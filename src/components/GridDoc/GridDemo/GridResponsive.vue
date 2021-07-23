@@ -59,8 +59,8 @@
   </lu-row>
 </template>
 <script lang="ts">
-import LuRow from '../../../lib/Grid/Row.vue'
-import LuCol from '../../../lib/Grid/Col.vue'
+import LuRow from '@/lib/Grid/Row.vue'
+import LuCol from '@/lib/Grid/Col.vue'
 export default {
   name: 'GridResponsive',
   components: {

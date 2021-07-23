@@ -31,12 +31,12 @@
 </template>
   
   <script lang=ts>
-import Container from '../Container.vue'
-import ToastBase from '../ToastDoc/ToastDemo/ToastBase.vue'
-import ToastAuto from '../ToastDoc/ToastDemo/ToastAuto.vue'
-import ToastButton from '../ToastDoc/ToastDemo/ToastButton.vue'
-import ToastHtml from '../ToastDoc/ToastDemo/ToastHtml.vue'
-import Attr from '../Attr.vue'
+import Container from '@/components/Container.vue'
+import ToastBase from '@/components/ToastDoc/ToastDemo/ToastBase.vue'
+import ToastAuto from '@/components/ToastDoc/ToastDemo/ToastAuto.vue'
+import ToastButton from '@/components/ToastDoc/ToastDemo/ToastButton.vue'
+import ToastHtml from '@/components/ToastDoc/ToastDemo/ToastHtml.vue'
+import Attr from '@/components/Attr.vue'
 export default {
   components: {
     Container,

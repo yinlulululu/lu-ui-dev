@@ -15,10 +15,10 @@
   </div>
 </template>
 <script lang="ts">
-import Container from '../Container.vue'
-import SwitchNormal from './SwitchDemo/SwitchNormal.vue'
-import SwitchDisabled from './SwitchDemo/SwitchDisabled.vue'
-import Attr from '../Attr.vue'
+import Container from '@/components/Container.vue'
+import SwitchNormal from '@/components/SwitchDoc/SwitchDemo/SwitchNormal.vue'
+import SwitchDisabled from '@/components/SwitchDoc/SwitchDemo/SwitchDisabled.vue'
+import Attr from '@/components/Attr.vue'
 
 export default {
   components: { Container, Attr },

@@ -27,18 +27,16 @@
 </template>
 
 <script lang="ts">
-import Container from '../Container.vue'
-import DialogNormal from '../DialogDoc/DialogDemo/DialogNormal.vue'
-import DialogOnCode from '../DialogDoc/DialogDemo/DialogOnCode.vue'
-import DialogOverlay from '../DialogDoc/DialogDemo/DialogOverlay.vue'
-import DialogTitle from '../DialogDoc/DialogDemo/DialogTitle.vue'
-import DialogButton from '../DialogDoc/DialogDemo/DialogButton.vue'
-import Dialog from '../../lib/Dialog/Dialog.vue'
-import Attr from '../Attr.vue'
+import Container from '@/components/Container.vue'
+import DialogNormal from '@/components/DialogDoc/DialogDemo/DialogNormal.vue'
+import DialogOnCode from '@/components/DialogDoc/DialogDemo/DialogOnCode.vue'
+import DialogOverlay from '@/components/DialogDoc/DialogDemo/DialogOverlay.vue'
+import DialogTitle from '@/components/DialogDoc/DialogDemo/DialogTitle.vue'
+import DialogButton from '@/components/DialogDoc/DialogDemo/DialogButton.vue'
+import Attr from '@/components/Attr.vue'
 export default {
   components: {
     Container,
-    Dialog,
     Attr
   },
   setup() {

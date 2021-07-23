@@ -30,13 +30,13 @@
     <Attr :data="data"></Attr>
   </div>
 </template>
-  <script lang="ts">
-import Container from '../Container.vue'
-import Attr from '../Attr.vue'
-import GridRow from '../GridDoc/GridDemo/GridRow.vue'
-import GridGutter from '../GridDoc/GridDemo/GridGutter.vue'
-import GridOffset from '../GridDoc/GridDemo/GridOffset.vue'
-import GridResponsive from '../GridDoc/GridDemo/GridResponsive.vue'
+<script lang="ts">
+import Container from '@/components/Container.vue'
+import Attr from '@/components/Attr.vue'
+import GridRow from '@/components/GridDoc/GridDemo/GridRow.vue'
+import GridGutter from '@/components/GridDoc/GridDemo/GridGutter.vue'
+import GridOffset from '@/components/GridDoc/GridDemo/GridOffset.vue'
+import GridResponsive from '@/components/GridDoc/GridDemo/GridResponsive.vue'
 export default {
   components: { Container, Attr },
   setup() {

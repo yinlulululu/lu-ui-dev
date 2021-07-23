@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import Button from '../../lib/Button/Button.vue'
+import Button from '@/lib/Button/Button.vue'
 import { computed } from '@vue/runtime-core'
 export default {
   props: {

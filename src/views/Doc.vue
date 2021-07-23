@@ -30,7 +30,6 @@
           <li>
             <router-link to="/doc/layout">Layout 布局</router-link>
           </li>
-
           <li>
             <router-link to="/doc/input">Input 输入框</router-link>
           </li>
@@ -56,7 +55,7 @@
 </template>
 
 <script lang="ts">
-import Topnav from './Topnav.vue'
+import Topnav from '@/views//Topnav.vue'
 import { inject, Ref } from 'vue'
 
 export default {

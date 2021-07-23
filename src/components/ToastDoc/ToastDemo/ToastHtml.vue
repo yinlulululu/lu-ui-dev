@@ -1,12 +1,12 @@
 <demo>
     支持HTML
-    </demo>
+</demo>
     <template>
   <lu-button theme="warning" @click="middle">弹出黑色字体</lu-button>
 </template>
     
-    <script>
-import LuButton from '../../../lib/Button/Button.vue'
+<script lang="ts">
+import LuButton from '@/lib/Button/Button.vue'
 export default {
   components: {
     LuButton

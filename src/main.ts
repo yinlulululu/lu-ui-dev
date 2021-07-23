@@ -1,4 +1,4 @@
-import './lib/lu.scss'
+import '@/lib/lu.scss'
 import "github-markdown-css";
 
 import { createApp } from 'vue'

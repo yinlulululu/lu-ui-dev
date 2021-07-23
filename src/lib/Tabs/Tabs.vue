@@ -30,7 +30,7 @@
   </div>
 </template>
 <script lang="ts">
-import TabsItem from './TabsItem.vue'
+import TabsItem from '@/lib/Tabs/TabsItem.vue'
 import { computed, ref, onMounted, watchEffect } from 'vue'
 export default {
   name: 't-tabs',

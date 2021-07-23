@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import LuRadio from '../../../lib/Radio/Radio.vue'
+import LuRadio from '@/lib/Radio/Radio.vue'
 import { ref } from 'vue'
 export default {
   name: 'RadioLabel',

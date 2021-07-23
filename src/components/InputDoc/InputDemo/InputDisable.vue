@@ -8,7 +8,7 @@
     
 <script lang="ts">
 import { ref } from 'vue'
-import LuInput from '../../../lib/Input/Input.vue'
+import LuInput from '@/lib/Input/Input.vue'
 
 export default {
   name: 'InputDisable',

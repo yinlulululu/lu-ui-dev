@@ -156,7 +156,6 @@ export default {
   }
 
   .fold-code {
-    //height: 0;
     overflow: hidden;
     border: 1px solid #ebebeb;
     border-radius: 8px;
@@ -171,23 +170,21 @@ export default {
         transform: translateX(-35px);
       }
     }
-    // .component {
-    //   width: 20px;
-    //   height: 20px;
-    // }
   }
 
   .per-wrapper {
     .per-content {
       // background-color: #fafafa;
+      background-color: #000;
       border-top: 1px solid #eaeefb;
       overflow-y: hidden;
       overflow-x: auto;
       height: 0;
       transition: height 0.25s;
+      color: #5545fb;
       .language-html {
-        color: #fff;
-        // background-color: #fff;
+        color: #ff009a;
+        // background-color: #ccc;
       }
     }
 

@@ -16,7 +16,7 @@
 </template>
   
   <script lang="ts">
-import Col from './Col.vue'
+import Col from '@/lib/Grid/Col.vue'
 export default {
   name: 't-row',
   props: {

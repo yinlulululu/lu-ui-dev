@@ -8,10 +8,10 @@
 </template>
     
 <script lang="ts">
-import LuButton from '../../../lib/Button/Button.vue'
-import Vue from 'vue'
+import LuButton from '@/lib/Button/Button.vue'
 import toast from '../../../lib/Toast/Toast.vue'
-
+import Vue from 'vue'
+// Vue.prototype.$http = toast
 export default {
   components: {
     LuButton

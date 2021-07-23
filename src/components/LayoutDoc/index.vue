@@ -14,9 +14,10 @@
   </div>
 </template>
 <script lang="ts">
-import Container from '../Container.vue'
-import LayoutNormal from './LayoutDemo/LayoutNormal.vue'
-import LayoutSider from './LayoutDemo/LayoutSider.vue'
+import Container from '@/components/Container.vue'
+import LayoutNormal from '@/components/LayoutDoc/LayoutDemo/LayoutNormal.vue'
+import LayoutSider from '@/components/LayoutDoc/LayoutDemo/LayoutSider.vue'
+import Attr from '@/components/Attr.vue'
 
 export default {
   components: { Container },

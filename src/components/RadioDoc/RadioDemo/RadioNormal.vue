@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import LuRadio from '../../../lib/Radio/Radio.vue'
+import LuRadio from '@/lib/Radio/Radio.vue'
 export default {
   name: 'RadioNormal',
   components: { LuRadio },

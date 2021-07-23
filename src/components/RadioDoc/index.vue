@@ -16,10 +16,10 @@
 </template>
 
 <script lang="ts">
-import Container from '../Container.vue'
-import Attr from '../Attr.vue'
-import RadioNormal from '../RadioDoc/RadioDemo/RadioNormal.vue'
-import RadioLabel from '../RadioDoc/RadioDemo/RadioLabel.vue'
+import Container from '@/components/Container.vue'
+import Attr from '@/components/Attr.vue'
+import RadioNormal from '@/components/RadioDoc/RadioDemo/RadioNormal.vue'
+import RadioLabel from '@/components/RadioDoc/RadioDemo/RadioLabel.vue'
 export default {
   components: {
     Container,

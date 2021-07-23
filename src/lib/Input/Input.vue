@@ -38,8 +38,8 @@ export default {
       default: ''
     }
   },
-  setup(props, context) {
-    const handleInput = (e) => {
+  setup(props: any, context: any) {
+    const handleInput = (e: any) => {
       context.emit('update:value', e.target.value)
     }
     return { handleInput }
@@ -55,6 +55,7 @@ export default {
 
   .lu-input__inner {
     display: inline-block;
+
     background-color: #fff;
     border-radius: 4px;
     border: 1px solid #dcdfe6;
@@ -70,11 +71,11 @@ export default {
 
     &:focus {
       outline: none;
-      border-color: #485fc7;
+      border-color: #5545fb;
     }
 
     &.is-disabled {
-      background-color: #f5f7fa;
+      background-color: #eee;
       border-color: #e4e7ed;
       color: #c0c4cc;
       cursor: not-allowed;

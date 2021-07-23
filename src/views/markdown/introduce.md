@@ -8,21 +8,25 @@
 
 <font color="#fff">PS：该组件库已适配 ***PC端*** 和 ***移动端*** </font>
 
-### <font color="#fff">已完成组件</font>
+### <font color="#fff">已完成组件</font> 
+#### <font color="#ccc">✅ Grid 栅格 </font> 
 #### <font color="#ccc">✅ Switch 开关</font>
 #### <font color="#ccc">✅ Button 按钮</font>
+#### <font color="#ccc">✅ Layout 布局</font>
+#### <font color="#ccc">✅ Input 输入框</font>
+#### <font color="#ccc">✅ Toast 提示框</font>
+#### <font color="#ccc">✅ Radio 单选框</font>
 #### <font color="#ccc">✅ Dialog 对话框</font>
-#### <font color="#ccc">✅ Tab 导航切换</font>
+#### <font color="#ccc">✅ Tabs 导航切换</font>
 <br> 
 
 ### <font color="#fff">未完成组件</font>
-#### <font color="#ccc">❌ Layout 布局</font>
 #### <font color="#ccc">❌ Carousel 轮播图</font>
 #### <font color="#ccc">❌ Picker 选择器</font>
 #### <font color="#ccc">❌ Uploader 文件上传</font>
 
 
-
+<br>
 
 ### <font color="#fff">快速上手</font>
 <font color="#fff">请参考[使用文档](#/doc/use) </font>

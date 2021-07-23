@@ -15,12 +15,12 @@
   </div>
 </template>
   <script lang="ts">
-import Container from '../Container.vue'
-import InputBase from '../InputDoc/InputDemo/InputBase.vue'
-import InputText from '../InputDoc/InputDemo/InputText.vue'
-import InputPassword from '../InputDoc/InputDemo/InputPassword.vue'
-import InputDisable from '../InputDoc/InputDemo/InputDisable.vue'
-import Attr from '../Attr.vue'
+import Container from '@/components/Container.vue'
+import InputBase from '@/components/InputDoc/InputDemo/InputBase.vue'
+import InputText from '@/components/InputDoc/InputDemo/InputText.vue'
+import InputPassword from '@/components/InputDoc/InputDemo/InputPassword.vue'
+import InputDisable from '@/components/InputDoc/InputDemo/InputDisable.vue'
+import Attr from '@/components/Attr.vue'
 export default {
   components: { Container, Attr },
   setup() {

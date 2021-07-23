@@ -11,8 +11,8 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import LuTabs from '../../../lib/Tabs/Tabs.vue'
-import LuTab from '../../../lib/Tabs/TabsItem.vue'
+import LuTabs from '@/lib/Tabs/Tabs.vue'
+import LuTab from '@/lib/Tabs/TabsItem.vue'
 export default {
   components: {
     LuTabs,

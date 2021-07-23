@@ -14,7 +14,7 @@
   </div>
   <!--  </Teleport>-->
 </template>
-    <script>
+<script lang="ts">
 // 构造组件的选项
 import { computed, reactive, ref } from 'vue'
 export default {

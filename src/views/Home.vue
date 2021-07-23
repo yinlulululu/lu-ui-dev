@@ -76,7 +76,7 @@
 </template>
 
 <script lang="ts">
-import Topnav from './Topnav.vue'
+import Topnav from '@/views/Topnav.vue'
 export default {
   components: {
     Topnav

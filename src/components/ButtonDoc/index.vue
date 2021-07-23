@@ -29,15 +29,15 @@
 </template>
 
 <script lang="ts">
-import LuButton from '../../lib/Button/Button.vue'
+import LuButton from '@/lib/Button/Button.vue'
 
-import Container from '../Container.vue'
-import ButtonNormal from './ButtonDemo/ButtonNormal.vue'
-import ButtonSize from './ButtonDemo/ButtonSize.vue'
-import ButtonDisabled from './ButtonDemo/ButtonDisabled.vue'
-import ButtonRound from './ButtonDemo/ButtonRound.vue'
-import ButtonLoading from './ButtonDemo/ButtonLoading.vue'
-import Attr from '../Attr.vue'
+import Container from '@/components/Container.vue'
+import ButtonNormal from '@/components/ButtonDoc/ButtonDemo/ButtonNormal.vue'
+import ButtonSize from '@/components/ButtonDoc/ButtonDemo/ButtonSize.vue'
+import ButtonDisabled from '@/components/ButtonDoc/ButtonDemo/ButtonDisabled.vue'
+import ButtonRound from '@/components/ButtonDoc/ButtonDemo/ButtonRound.vue'
+import ButtonLoading from '@/components/ButtonDoc/ButtonDemo/ButtonLoading.vue'
+import Attr from '@/components/Attr.vue'
 export default {
   components: {
     LuButton,

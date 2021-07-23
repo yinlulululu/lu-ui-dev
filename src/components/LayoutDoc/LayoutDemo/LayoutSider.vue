@@ -12,11 +12,11 @@
   </lu-layout>
 </template>
 <script lang="ts">
-import LuLayout from '../../../lib/Layout/Layout.vue'
-import LuHeader from '../../../lib/Layout/Header.vue'
-import LuContent from '../../../lib/Layout/Content.vue'
-import LuFooter from '../../../lib/Layout/Footer.vue'
-import LuSider from '../../../lib/Layout/Sider.vue'
+import LuLayout from '@/lib/Layout/Layout.vue'
+import LuHeader from '@/lib/Layout/Header.vue'
+import LuContent from '@/lib/Layout/Content.vue'
+import LuFooter from '@/lib/Layout/Footer.vue'
+import LuSider from '@/lib/Layout/Sider.vue'
 export default {
   name: 'LayoutSider',
   components: {

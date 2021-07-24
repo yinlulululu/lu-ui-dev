@@ -2,7 +2,7 @@
     自定义弹出时间
 </demo>
 <template>
-  <lu-button theme="primary" @click="middle">中间弹出5s</lu-button>
+  <lu-button theme="warning" @click="middle">中间弹出5s</lu-button>
 </template>
     
 <script lang="ts">

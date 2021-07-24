@@ -3,7 +3,7 @@
     <h1>Toast 提示框</h1>
     <Container :component="ToastBase">
       <p>
-        可以使用<code>position</code>属性定义<code>toast</code>弹出位置，可选择默认<code>top</code>or<code
+        可以使用<code>position</code>属性定义<code>toast</code>弹出位置，可选择默认<code>top</code>或者<code
           >middle</code
         ><code>bottom</code>。
       </p>
@@ -30,7 +30,7 @@
   </div>
 </template>
   
-  <script lang=ts>
+<script lang=ts>
 import Container from '@/components/Container.vue'
 import ToastBase from '@/components/ToastDoc/ToastDemo/ToastBase.vue'
 import ToastAuto from '@/components/ToastDoc/ToastDemo/ToastAuto.vue'

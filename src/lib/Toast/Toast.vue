@@ -1,5 +1,5 @@
 <template>
-  <!--  <Teleport to="body">-->
+  <!-- <Teleport to="body"> -->
   <div class="lu-wrapper" :class="toastClasses" v-if="visible">
     <div class="lu-toast" ref="toast">
       <div class="message">
@@ -12,9 +12,9 @@
       }}</span>
     </div>
   </div>
-  <!--  </Teleport>-->
+  <!-- </Teleport> -->
 </template>
-<script lang="ts">
+<script>
 // 构造组件的选项
 import { computed, reactive, ref } from 'vue'
 export default {
@@ -160,7 +160,8 @@ export default {
   padding: 0 16px;
   display: flex;
   align-items: center;
-  background: #00cec9;
+  background: linear-gradient(to right, #5545fb, #ff009a);
+
   border-radius: 4px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
   .message {
@@ -173,7 +174,7 @@ export default {
   }
   .line {
     height: 100%;
-    border-left: 2px solid #ffffff;
+    border-left: 1px solid #ffffff;
     margin-left: 16px;
   }
 }

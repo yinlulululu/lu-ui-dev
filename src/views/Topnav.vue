@@ -2,18 +2,22 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <div>
-        <img src="../assets/logo.png" alt="" />
+        <img src="../assets/lu.jpeg" alt="" />
       </div>
     </router-link>
 
     <ul class="menu">
       <li>
-        <router-link to="/doc">文档</router-link>
+        <router-link to="/home">首页</router-link>
       </li>
       <li>
-        <a href="https://blog.csdn.net/weixin_46734347?spm=1000.2115.3001.5343"
-          >博客</a
-        >
+        <router-link to="/doc/introduce">文档</router-link>
+      </li>
+      <li>
+        <router-link to="/doc/switch">组件</router-link>
+      </li>
+      <li>
+        <p style="margin-top: 2px">1.0.1</p>
       </li>
     </ul>
     <span class="toggleAside" @click="toggleAside">

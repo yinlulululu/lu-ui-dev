@@ -339,6 +339,7 @@ export default {
   width: 800px;
   @media (max-width: 500px) {
     width: 100%;
+    margin-left: 5px;
   }
   .icon-flag > div {
     width: 150px;

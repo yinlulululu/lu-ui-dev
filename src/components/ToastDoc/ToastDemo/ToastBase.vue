@@ -6,7 +6,6 @@
   <lu-button theme="warning" @click="middle">中间弹出</lu-button>
   <lu-button theme="success" @click="bottom">下方弹出</lu-button>
 </template>
-    
 <script lang="ts">
 import LuButton from '@/lib/Button/Button.vue'
 export default {

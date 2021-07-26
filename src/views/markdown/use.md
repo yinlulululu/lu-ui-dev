@@ -8,9 +8,8 @@
 
 
 
-<font color="#000">
 
-```
+```javascript
 import 'lu-ui/dist/lib/lu.css'
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -28,7 +27,7 @@ app.mount('#app')
 > 注意要引入样式文件
 
 
-```
+```javascript
 import 'lu-ui/dist/lib/lu.css'
 import { createApp } from 'vue'
 import App from './App.vue'

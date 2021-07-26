@@ -34,7 +34,7 @@
 <script lang="ts">
 import { computed, ref } from 'vue'
 import 'prismjs'
-import 'prismjs/themes/prism-coy.css'
+import 'prismjs/themes/prism-funky.css'
 const Prism = (window as any).Prism
 
 export default {
@@ -174,7 +174,6 @@ export default {
 
   .per-wrapper {
     .per-content {
-      // background-color: #fafafa;
       background-color: #000;
       border-top: 1px solid #eaeefb;
       overflow-y: hidden;
@@ -184,7 +183,6 @@ export default {
       color: #5545fb;
       .language-html {
         color: #ff009a;
-        // background-color: #ccc;
       }
     }
 

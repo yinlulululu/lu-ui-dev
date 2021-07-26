@@ -36,6 +36,7 @@ export default {
     // console.log('topNav中的asideVisible.value为', asideVisible.value)
 
     const toggleAside = () => {
+      // @ts-ignores
       asideVisible.value = !asideVisible.value
     }
     return {

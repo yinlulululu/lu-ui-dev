@@ -75,6 +75,10 @@ const router = createRouter({
             {
                 path: 'input',
                 component: () => import('@/components/InputDoc/index.vue')
+            },
+            {
+                path: 'icon',
+                component: () => import('@/components/IconDoc/index.vue')
             }
             ]
 

@@ -9,11 +9,11 @@
 
 
 
-```javascript
-import 'lu-ui/dist/lib/lu.css'
+```
+import 'vue3_lu_ui/dist/lib/lu.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import { Button: lu-button } from 'lu-ui'
+import { Button: lu-button } from 'vue3_lu_ui'
 
 const app = createApp(App)
 app.use(lu-button)
@@ -27,11 +27,11 @@ app.mount('#app')
 > 注意要引入样式文件
 
 
-```javascript
-import 'lu-ui/dist/lib/lu.css'
+```
+import 'vue3_lu_ui/dist/lib/lu.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import { LuUI } from 'lu-ui'
+import { LuUI } from 'vue3_lu_ui'
 
 const app = createApp(App)
 app.use(LuUI)

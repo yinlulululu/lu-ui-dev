@@ -1,7 +1,9 @@
 {
-  "name": "lu-ui",
+  "name": "vue3_lu_ui",
   "author": "yinlu",
-  "version": "0.0.0",
+  "version": "1.0.1",
+  "files": ["dist/lib/*"],
+  "main": "dist/lib/lu.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"

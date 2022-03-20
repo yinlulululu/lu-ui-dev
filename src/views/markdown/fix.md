@@ -5,13 +5,13 @@
 
 
 ```
-npm install lu-ui -S
+npm install vue3_lu_ui -S
 ```
 
 <font color="#ff009a">yarn 安装</font>
 
 ```
-yarn add lu-ui
+yarn add vue3_lu_ui
 ```
 
 <br />

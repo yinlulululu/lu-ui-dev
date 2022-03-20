@@ -3,14 +3,13 @@
 
 https://yinlulululu.github.io/lu-ui/#/home
 
-![image](https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/1.png)
+<image src="https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/1.png" width="500" height="300"></image>
 
-![image](https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/2.png)
+<image src="https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/2.png" width="500" height="300"></image>
 
-![image](https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/3.png)
+<image src="https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/4.png" width="500" height="300"></image>
 
-![image](https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/4.png)
+<image src="https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/5.png" width="500" height="300"></image>
 
-![image](https://github.com/yinlulululu/lu-ui-dev/blob/main/readme-img/5.png)
 
 
